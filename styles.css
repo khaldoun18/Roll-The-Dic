@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #E5E0FF;
+}
+h1{
+    font-size: 400%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+h2{
+    font-size: 250%;
+    text-align: center;
+    
+}
+p{
+    font-size: large;
+}
+.dice{
+    width: 70%;
+}
+.all{
+    padding-top: 5%;
+    text-align: center;
+}
+.player1{
+    display: inline-block;
+   
+}
+.player2{
+    display: inline-block;
+  
+    
+}
+.bt{
+    border-radius: 40px;
+    transition: all 0.3s ease ;
+    background-color: black;
+    color: #E5E0FF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    
+}
+.bt:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    color: black;
+    background-color: #E5E0FF;
+}
+.bt-c{
+    text-align: center;
+    
+}
+.winner {
+    display: none;
+  }
+ 

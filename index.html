@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+       
+    <h1 >Press the button</h1>
+    <div class="bt-c">
+        <button class="bt" onclick="myFunction()">Click Me!</button>
+    </div>
+    
+    <h2 class="winner" id="winner">No One Wins </h2>
+    <div class="all">
+        <div class="player1">
+            <p>Player 1</p>
+            <img id="p1" class="dice"src="dice/1.png" alt="dice 1">
+            
+        </div>
+        <div class="player2">
+            <p>Player 2</p>
+            <img id="p2" class="dice" src="dice/1.png" alt="dice 2">
+            
+        </div>
+    </div>
+   
+    <script>
+        function myFunction(){
+            var heading = document.getElementById("winner");
+            heading.classList.remove("winner");
+
+        var a=Math.floor(Math.random()*6 +1);
+        var b=Math.floor(Math.random()*6 +1);
+        if(a===1){
+            document.getElementById("p1").src="dice/1.png";
+        }
+        else if(a===2){
+            document.getElementById("p1").src="dice/2.png";
+        }
+        else if(a===3){
+            document.getElementById("p1").src="dice/3.png";
+        }
+        else if(a===4){
+            document.getElementById("p1").src="dice/4.png";
+        }
+        else if(a===5){
+            document.getElementById("p1").src="dice/5.png";
+        }
+        else if(a===6){
+            document.getElementById("p1").src="dice/6.png";
+        }
+
+
+        if(b===1){
+            document.getElementById("p2").src="dice/1.png";
+        }
+        else if(b===2){
+            document.getElementById("p2").src="dice/2.png";
+        }
+        else if(b===3){
+            document.getElementById("p2").src="dice/3.png";
+        }
+        else if(b===4){
+            document.getElementById("p2").src="dice/4.png";
+        }
+        else if(b===5){
+            document.getElementById("p2").src="dice/5.png";
+        }
+        else if(b===6){
+            document.getElementById("p2").src="dice/6.png";
+        }
+
+
+
+        if(a>b){
+            document.getElementById("winner").innerHTML="Player 1 wins";
+        }
+        else if(a===b){
+            document.getElementById("winner").innerHTML="Draw";
+        }
+        else {
+            document.getElementById("winner").innerHTML="Player 2 wins";
+        }
+    }
+    </script>
+    </body>
+</html>
